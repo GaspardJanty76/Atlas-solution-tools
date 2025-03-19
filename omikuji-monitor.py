@@ -10,7 +10,7 @@ import sys
 sys.stdout.reconfigure(encoding="utf-8")
 load_dotenv()
 
-TOKEN = os.getenv("DISCORD_TOKEN")
+TOKEN_DISCORD = os.getenv("DISCORD_TOKEN")
 CHANNEL_ID = 1215697019574812752  
 URL = "https://omikujistore.com/collections/francais?limit=48"
 
@@ -79,4 +79,4 @@ async def on_ready():
     print(f"{bot.user} est connecté ! ✅")
     check_website.start()
 
-bot.run(TOKEN)
+bot.run(TOKEN_DISCORD)

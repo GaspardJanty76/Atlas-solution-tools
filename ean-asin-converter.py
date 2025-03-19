@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO)
 load_dotenv()
 
 TOKEN_DISCORD = os.getenv('DISCORD_TOKEN')
-TOKEN_ROCKET = '4744|LHdTQjdvMDUJknV1vMlpKGAzz1gAqdERJKv6tnYWf8059767'
+TOKEN_ROCKET = os.getenv('ROCKET_API_KEY')
 API_URL = "https://app.rocketsource.io/api/v3/convert"
 
 ID_DU_CANAL = 1310572165040574474
